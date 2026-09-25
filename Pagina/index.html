@@ -73,6 +73,43 @@
         .contact-info p {
             margin: 0.4rem 0;
         }
+        .help-desk-images {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 1rem;
+            margin: 1rem 0 1.5rem;
+        }
+        .help-desk-images figure {
+            margin: 0;
+        }
+        .help-desk-images img {
+            width: 100%;
+            height: 160px;
+            object-fit: cover;
+            border-radius: 6px;
+            box-shadow: 0 0 6px #cfd8dc;
+        }
+        .help-desk-images figcaption {
+            font-size: 0.85rem;
+            color: #555;
+            text-align: center;
+            margin-top: 0.3rem;
+        }
+        .help-channels {
+            list-style: none;
+            padding: 0;
+        }
+        .help-channels li {
+            margin: 0.5rem 0;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+        .help-channels li::before {
+            content: "✔";
+            color: #00796b;
+            position: absolute;
+            left: 0;
+        }
     </style>
 </head>
 <body>
@@ -84,6 +121,7 @@
     <nav>
         <a href="#medicamentos">Medicamentos</a>
         <a href="#contenido-farmacia">Contenido de Farmacia</a>
+        <a href="#mesa-de-ayuda">Mesa de Ayuda</a>
         <a href="#contactos-enfermeria">Contactos de Enfermería</a>
     </nav>
 
@@ -157,6 +195,47 @@
             Sí, aceptamos efectivo, tarjetas débito/crédito y pagos por transferencia.</p>
         </section>
 
+        <section id="mesa-de-ayuda">
+            <h2>Mesa de Ayuda</h2>
+            <p>Nuestro equipo de mesa de ayuda está disponible para resolver tus dudas sobre medicamentos, pedidos y servicios de la farmacia.</p>
+
+            <div class="help-desk-images">
+                <figure>
+                    <img src="https://images.unsplash.com/photo-1553775282-20af80779df7?fm=jpg&q=60&w=800&auto=format&fit=crop" alt="Agente de soporte con diadema atendiendo una llamada" loading="lazy">
+                    <figcaption>Atención telefónica y soporte</figcaption>
+                </figure>
+                <figure>
+                    <img src="https://images.unsplash.com/photo-1599738502992-03a3d01e3b53?fm=jpg&q=60&w=800&auto=format&fit=crop" alt="Persona realizando una llamada desde su teléfono" loading="lazy">
+                    <figcaption>Contacto vía telefónica</figcaption>
+                </figure>
+                <figure>
+                    <img src="https://images.unsplash.com/photo-1631980839324-fdfabbf1a573?fm=jpg&q=60&w=800&auto=format&fit=crop" alt="Medicamentos organizados para asesoría en mesa de ayuda" loading="lazy">
+                    <figcaption>Asesoría sobre medicamentos</figcaption>
+                </figure>
+            </div>
+
+            <h3>Canales de Atención</h3>
+            <ul class="help-channels">
+                <li>Teléfono: +57 2 720 4567</li>
+                <li>WhatsApp: +57 320 555 1234</li>
+                <li>Correo: soporte@farmaciasaludycuido.com</li>
+                <li>Chat en línea desde nuestra página web (próximamente)</li>
+            </ul>
+
+            <h3>Horario de la Mesa de Ayuda</h3>
+            <p>Lunes a Viernes: 7:00 AM - 7:00 PM<br>
+            Sábados: 8:00 AM - 3:00 PM<br>
+            Domingos y festivos: soporte únicamente por WhatsApp</p>
+
+            <h3>¿En qué te podemos ayudar?</h3>
+            <ul>
+                <li>Consultas sobre disponibilidad y precios de medicamentos</li>
+                <li>Estado de pedidos y domicilios</li>
+                <li>Dudas sobre uso, dosis o interacciones de medicamentos</li>
+                <li>Reclamos, sugerencias o novedades con tu compra</li>
+            </ul>
+        </section>
+
         <section id="contactos-enfermeria">
             <h2>Contactos de Enfermería</h2>
             <div class="contact-info">
@@ -181,4 +260,3 @@
     </footer>
 </body>
 </html>
-
